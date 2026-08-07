@@ -1,37 +1,38 @@
-# Compétences détectées automatiquement
+# Compétences détectées automatiquement (basées sur le CV)
 
-Ce fichier liste les technologies et outils que j'ai détectés en parcourant vos dépôts publics (fichiers package.json, composer.json, existence d'artisan, Docker, README).
+Ce fichier liste les technologies et outils extraits du CV fourni (résumé) et complétés par l'analyse des README publics.
+
+Source principale : CV (cv_alternance_khady.pdf) et README publics.
 
 ## Front‑end
-- React.js (Vite) — memoireMaster/frontend, secu2/shop
+- React.js (Vite) — interfaces web modernes
 - TypeScript, JavaScript
 - Tailwind CSS, PostCSS
-- Create React App (secu2/shop)
-- Vite, plugin React
+- Flutter (mobile)
+- Create React App (projet shop)
 
 ## Back‑end
-- Node.js, Express.js (memoireMaster/backend)
-- PHP, Laravel (MemoireL3, stage)
-- Python (présencé comme option/projets/CI)
+- Node.js, Express.js
+- PHP, Laravel
+- Django (expériences citées dans le CV)
+- Python
 
 ## Bases de données
-- PostgreSQL, MongoDB (memoireMaster)
-- MySQL / MariaDB (liste générale)
+- PostgreSQL
+- MongoDB
+- MySQL / MariaDB
 
-## DevOps / Infrastructure
-- Docker, Docker Compose (memoireMaster, stage)
-- GitHub Actions / CI (fichiers CI présents dans certains projets)
-- PHPUnit (tests PHP)
+## DevOps & Infra
+- Docker, Docker Compose
+- CI/CD (workflows), Github Actions (optionnel)
 
-## Blockchain / Web3
-- Solidity, Hardhat, ethers.js (memoireMaster/blockchain)
+## Web3 / Blockchain
+- Solidity, Hardhat, ethers.js (mention dans CV pour projet d'ancrage)
 
-## Autres outils & méthodologies
-- pnpm / yarn / npm / package-lock.json
-- Composer, composer.lock
-- ESLint, Prettier (config mentions)
-- Scrum / Kanban (indiqué dans README portfolio)
+## Langues & méthodes
+- Français (courant), Anglais (intermédiaire)
+- Scrum / Kanban
 
 ---
 
-Si vous voulez que j'évalue un « niveau » (débutant/intermédiaire/avancé) par technologie en fonction des occurrences et de la présence de tests/config, je peux produire un SKILLS.md plus détaillé avec niveaux estimés et preuves (chemins de fichiers où la techno apparaît).
+Si tu veux que j'ajuste les niveaux (ex: Avancé / Intermédiaire / Débutant) ou que j'ajoute des preuves (fichiers où la techno est utilisée), dis‑le moi et je génère une version détaillée.
