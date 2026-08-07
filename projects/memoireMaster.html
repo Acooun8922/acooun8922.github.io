@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>memoireMaster — Projet</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a href="/">← Retour</a><h1>memoireMaster</h1></div></header>
+  <main class="container">
+    <section class="card">
+      <h2>Monorepo — Plateforme Multi‑tenant de Gestion Universitaire</h2>
+      <p>Technos détectées : React (Vite), TypeScript, Tailwind, Node.js, Express, PostgreSQL, MongoDB, Solidity (Hardhat), Docker & Docker Compose.</p>
+      <h3>Résumé</h3>
+      <p>Ce projet est structuré comme un monorepo contenant les 3 couches principales de l'application :</p>
+      <ul>
+        <li><strong>Frontend</strong> (`/frontend`) — React.js (Vite) + TypeScript, Tailwind CSS. Interface pour SuperAdmin, Admin Université, Etudiants.</li>
+        <li><strong>Backend</strong> (`/backend`) — Node.js + Express.js + TypeScript. PostgreSQL (données relationnelles) et MongoDB (documents, dossiers).</li>
+        <li><strong>Blockchain</strong> (`/blockchain`) — Smart Contracts Solidity (Ethereum/Polygon) pour ancrage de documents (hash).</li>
+      </ul>
+      <h3>Infrastructure</h3>
+      <p>Conteneurisation avec Docker & Docker Compose. Fichiers utiles : `docker-compose.yml`, `package.json`.</p>
+      <p>Repo : <a href="https://github.com/arame7/memoireMaster" target="_blank">github.com/arame7/memoireMaster</a></p>
+    </section>
+  </main>
+</body>
+</html>

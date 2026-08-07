@@ -8,66 +8,97 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>KHADY DIOP</h1>
-      <p class="subtitle">Alternance — Développeuse Full‑Stack</p>
-      <p class="contact">Bayonne • +33 7 44 19 50 86 • <a href="mailto:khadydiopfr02@gmail.com">khadydiopfr02@gmail.com</a></p>
-      <p class="links">LinkedIn: <a href="https://www.linkedin.com/in/khady-diop-dev" target="_blank">khady-diop-dev</a> • GitHub: <a href="https://github.com/arame7" target="_blank">@arame7</a></p>
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>KHADY DIOP</h1>
+        <p class="subtitle">Alternance — Développeuse Full‑Stack</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="about">
-      <h2>Profil</h2>
-      <p>Alternante développeuse Full‑Stack, j'ai réalisé une alternance de 12 à 24 mois et travaillé sur des projets web et applicatifs. Je suis à l'aise sur la création d'applications web modernes, l'intégration front‑end et le développement back‑end. J'aime automatiser et améliorer les process de développement (CI/CD, conteneurisation).</p>
+    <section class="hero">
+      <div>
+        <h2>Développeuse Full‑Stack • Recherche alternance 12–24 mois</h2>
+        <p class="lead">Création d'applications web modernes — front (React/Vite/Tailwind) et back (Node, PHP/Laravel). Conteneurisation (Docker), CI/CD et expérimentations blockchain.</p>
+        <p class="contact-line">Bayonne • <a href="mailto:khadydiopfr02@gmail.com">khadydiopfr02@gmail.com</a> • <a href="https://www.linkedin.com/in/khady-diop-dev" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="hero-cta">
+        <a class="btn" href="/cv_alternance_khady.pdf" download>Télécharger le CV (PDF)</a>
+      </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="card">
       <h2>Compétences</h2>
-      <div class="skill-group">
-        <h3>Front‑end / Mobile</h3>
-        <p>React.js · Angular · Vue.js · Flutter · HTML5 · CSS3 · TypeScript · JavaScript · Tailwind · Vite</p>
-      </div>
-      <div class="skill-group">
-        <h3>Back‑end</h3>
-        <p>Node.js · Express · PHP · Laravel · Python · API REST</p>
-      </div>
-      <div class="skill-group">
-        <h3>Bases de données</h3>
-        <p>PostgreSQL · MongoDB · MySQL</p>
-      </div>
-      <div class="skill-group">
-        <h3>DevOps & Outils</h3>
-        <p>Docker · docker‑compose · Git · CI/CD · Composer · PHPUnit · Linux</p>
+      <div class="grid-3">
+        <div>
+          <h3>Front‑end</h3>
+          <p>React, TypeScript, Vite, Tailwind, Flutter, HTML, CSS, CRA</p>
+        </div>
+        <div>
+          <h3>Back‑end</h3>
+          <p>Node.js, Express, PHP (Laravel), Python, APIs REST, JWT</p>
+        </div>
+        <div>
+          <h3>Infra & Data</h3>
+          <p>Docker, docker‑compose, PostgreSQL, MongoDB, Git, CI/CD</p>
+        </div>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projets & dépôts</h2>
-      <p>Pour les descriptions complètes, voir <a href="/PROJECTS.md">PROJECTS.md</a>.</p>
-      <ul>
-        <li><a href="https://github.com/arame7/memoireMaster" target="_blank">memoireMaster</a> — Monorepo React/Node/Blockchain.</li>
-        <li><a href="https://github.com/arame7/MemoireL3" target="_blank">MemoireL3</a> — Application Laravel / PHP (tailwind, charting).</li>
-        <li><a href="https://github.com/arame7/stage" target="_blank">stage</a> — Gestion des stages (Laravel / Vite / Tailwind / Docker).</li>
-        <li><a href="https://github.com/arame7/Portfolio" target="_blank">Portfolio</a> — README détaillé (experiences, stack).</li>
-        <li><a href="https://github.com/arame7/secu2" target="_blank">secu2</a> — Projet React (shop) / CRA.</li>
-      </ul>
+    <section id="projects" class="card">
+      <h2>Projets</h2>
+      <p class="note">Pages détaillées par projet — cliquez sur une carte pour ouvrir la page du projet.</p>
+      <div class="projects-grid">
+        <a class="project-card" href="/projects/memoireMaster.html">
+          <h3>memoireMaster</h3>
+          <p>Monorepo full‑stack — React (Vite) + Node/Express (TypeScript) + Blockchain (Solidity)</p>
+        </a>
+
+        <a class="project-card" href="/projects/MemoireL3.html">
+          <h3>MemoireL3</h3>
+          <p>Application Laravel / PHP avec outils front (Tailwind, Vite) et visualisations (D3, Chartist).</p>
+        </a>
+
+        <a class="project-card" href="/projects/stage.html">
+          <h3>stage</h3>
+          <p>Gestion des stages — Laravel + Vite + Tailwind, conteneurisé (Docker).</p>
+        </a>
+
+        <a class="project-card" href="/projects/Portfolio.html">
+          <h3>Portfolio</h3>
+          <p>README synthétique présentant stack, expériences et projets (ERP, cybersécurité, blockchain).</p>
+        </a>
+
+        <a class="project-card" href="/projects/secu2.html">
+          <h3>secu2 (shop)</h3>
+          <p>Application front bootstrappée Create React App — projet e‑commerce / démonstration.</p>
+        </a>
+
+        <a class="project-card" href="/projects/testG3.html">
+          <h3>testG3</h3>
+          <p>Petit dépôt de tests Java.</p>
+        </a>
+      </div>
+      <p class="note">Remarque : les projets privés peuvent être ajoutés après que vous me donniez l'accès ou que vous fournissiez les README. Souhaitez‑vous que j'intègre vos README privés ? (voir message ci‑dessous pour options)</p>
     </section>
 
-    <section id="cv">
-      <h2>CV</h2>
-      <p>Pour télécharger le CV : <a href="/cv_alternance_khady.pdf" download>Télécharger le CV (PDF)</a></p>
-    </section>
-
-    <section id="contact">
+    <section id="contact" class="card">
       <h2>Contact</h2>
-      <p>khadydiopfr02@gmail.com • Bayonne 64100</p>
+      <p>Email : <a href="mailto:khadydiopfr02@gmail.com">khadydiopfr02@gmail.com</a></p>
+      <p>GitHub : <a href="https://github.com/arame7" target="_blank">@arame7</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>Site généré automatiquement — contrôlez et modifiez le contenu dans le dépôt <a href="https://github.com/arame7/arame7.github.io" target="_blank">arame7/arame7.github.io</a>.</small>
+      <small>Site généré automatiquement — modifiez le contenu dans le dépôt <a href="https://github.com/arame7/arame7.github.io" target="_blank">arame7/arame7.github.io</a>.</small>
     </div>
   </footer>
 </body>
