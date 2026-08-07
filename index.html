@@ -12,12 +12,14 @@
   <meta property="og:description" content="Portfolio & CV professionnel. Expertise en applications web et mobile. React, Node.js, Flutter, Docker, Blockchain.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arame7.github.io">
-  <meta property="og:image" content="https://arame7.github.io/assets/img/profile.jpg">
+  <meta property="og:image" content="https://arame7.github.io/images/profile.JPG">
+  <meta property="og:locale" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KHADY DIOP — Développeuse Full-Stack">
   <meta name="twitter:description" content="Portfolio professionnel. Alternance développeuse full-stack en React, Node.js, Flutter, Django.">
-  <meta name="twitter:image" content="https://arame7.github.io/assets/img/profile.jpg">
+  <meta name="twitter:image" content="https://arame7.github.io/images/profile.JPG">
   <link rel="canonical" href="https://arame7.github.io">
+  <link rel="icon" href="/images/profile.JPG" type="image/jpeg">
   <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">
     {
@@ -25,7 +27,7 @@
       "@type": "Person",
       "name": "Khady Diop",
       "url": "https://arame7.github.io",
-      "image": "https://arame7.github.io/assets/img/profile.jpg",
+      "image": "https://arame7.github.io/images/profile.JPG",
       "jobTitle": "Développeuse Full-Stack",
       "email": "khadydiopfr02@gmail.com",
       "sameAs": ["https://github.com/arame7", "https://www.linkedin.com/in/khady-diop-dev"],
@@ -38,6 +40,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -49,8 +52,9 @@
           <p class="subtitle">Alternance — Développeuse Full‑Stack</p>
         </div>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Navigation principale">
         <a href="#about">À propos</a>
+        <a href="#experience">Expérience</a>
         <a href="#skills">Compétences</a>
         <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
@@ -58,38 +62,75 @@
     </div>
   </header>
 
-  <main class="container">
+  <main id="main" class="container">
     <section class="hero">
       <div>
         <h2>Développeuse Full‑Stack • Recherche alternance 12–24 mois</h2>
-        <p class="lead">Création d'applications web modernes — front (React/Vite/Tailwind) et back (Node, PHP/Laravel). Conteneurisation (Docker), CI/CD et expérimentations blockchain.</p>
-        <p class="contact-line">Bayonne • <a href="mailto:khadydiopfr02@gmail.com">khadydiopfr02@gmail.com</a> • <a href="https://www.linkedin.com/in/khady-diop-dev" target="_blank">LinkedIn</a></p>
+        <p class="lead">Création d'applications web modernes — front (React/Vite/Tailwind) et back (Node, PHP/Laravel, Django). Conteneurisation (Docker), CI/CD et expérimentations blockchain.</p>
+        <p class="contact-line">Bayonne • <a href="mailto:khadydiopfr02@gmail.com">khadydiopfr02@gmail.com</a> • <a href="https://www.linkedin.com/in/khady-diop-dev" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </div>
       <div class="hero-cta">
-        <a class="btn" href="/cv_alternance_khady.pdf" download>Télécharger le CV (PDF)</a>
+        <a class="btn" href="mailto:khadydiopfr02@gmail.com?subject=Demande%20de%20CV%20—%20Alternance">Demander mon CV</a>
+        <a class="btn btn-secondary" href="#contact">Me contacter</a>
       </div>
     </section>
 
     <section id="about" class="card">
       <h2>Profil</h2>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:center;">
+      <div class="about-grid">
         <div>
           <p><strong>Développeuse Full-Stack passionnée par les solutions modernes et performantes.</strong></p>
           <p>Étudiante en Master 1 SIGLIS avec expérience en développement web et mobile. Spécialisée en :</p>
-          <ul style="margin:10px 0; padding-left:24px;">
-            <li>Applications web scalables (React, Node.js, Laravel)</li>
+          <ul>
+            <li>Applications web scalables (React, Node.js, Laravel, Django)</li>
             <li>Développement mobile multi-plateforme (Flutter)</li>
-            <li>Infrastructure cloud & DevOps (Docker, K8s, CI/CD)</li>
-            <li>Technologies blockchain pour sécurité</li>
+            <li>Infrastructure & DevOps (Docker, CI/CD)</li>
+            <li>Technologies blockchain pour sécurisation de documents</li>
           </ul>
-          <p>🎯 En recherche <strong>alternance 12-24 mois</strong> dès septembre 2026.</p>
+          <p>En recherche <strong>alternance 12-24 mois</strong> dès septembre 2026.</p>
         </div>
-        <div style="background:linear-gradient(135deg,rgba(217,115,59,0.1),rgba(11,57,64,0.1)); padding:20px; border-radius:12px; border:1px solid rgba(217,115,59,0.2);">
-          <h3 style="margin-top:0; color:var(--cta);">📍 Localisation</h3>
+        <div class="about-aside">
+          <h3>Localisation</h3>
           <p><strong>Bayonne</strong> (Nouvelle-Aquitaine)</p>
-          <p>✈️ Télétravail / mobilité France</p>
+          <p>Télétravail / mobilité France</p>
           <p><strong>Disponibilité :</strong> Sept 2026</p>
+          <p><strong>Formation :</strong> Master 1 SIGLIS</p>
         </div>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Expérience</h2>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3>Naldeo Digital Climate</h3>
+            <span class="experience-meta">Alternance / mission — Enerbird</span>
+          </div>
+          <p>Plateforme de supervision énergétique temps réel (tertiaire & industrie) : dashboards, alertes, conformité.</p>
+          <ul>
+            <li>Fonctionnalités backend (Django + DRF) et dashboards React</li>
+            <li>Optimisation performances et intégration données IoT</li>
+            <li>Déploiement / monitoring (Docker, Kubernetes)</li>
+          </ul>
+          <p class="experience-stack">Django · React · PostgreSQL · Redis · Docker · K8s</p>
+          <a class="experience-link" href="/projects/naldeo.html">Voir le détail →</a>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3>Onyx Technology</h3>
+            <span class="experience-meta">Mission — ERP Jambaar</span>
+          </div>
+          <p>ERP de gestion commerciale avec app mobile Flutter et API Node.js / PostgreSQL.</p>
+          <ul>
+            <li>Nouvelles fonctionnalités backend (Node.js + Express)</li>
+            <li>Optimisation PostgreSQL et intégration d'APIs externes</li>
+            <li>Contribution à l'interface mobile Flutter</li>
+          </ul>
+          <p class="experience-stack">Node.js · Express · PostgreSQL · Flutter · Docker</p>
+          <a class="experience-link" href="/projects/onyx.html">Voir le détail →</a>
+        </article>
       </div>
     </section>
 
@@ -98,13 +139,13 @@
       <div class="grid-3">
         <div>
           <h3>Front‑end</h3>
-          <p>React, TypeScript, Vite, Tailwind, Flutter, HTML, CSS, Create React App</p>
+          <p>React, TypeScript, Vite, Tailwind, Flutter, HTML, CSS</p>
           <div class="skill-bar"><div style="width:88%">React / TypeScript</div></div>
         </div>
         <div>
           <h3>Back‑end</h3>
-          <p>Node.js, Express, PHP (Laravel), Python, APIs REST, JWT</p>
-          <div class="skill-bar"><div style="width:80%">Node.js / Laravel</div></div>
+          <p>Node.js, Express, PHP (Laravel), Django, APIs REST, JWT</p>
+          <div class="skill-bar"><div style="width:80%">Node.js / Laravel / Django</div></div>
         </div>
         <div>
           <h3>Infra & Data</h3>
@@ -117,142 +158,115 @@
     <section id="projects" class="card">
       <h2>Projets</h2>
       <div class="projects-grid">
-        <!-- existing project cards -->
-        <a class="project-card" href="/projects/memoireMaster.html">
-          <h3>memoireMaster</h3>
-          <p>Monorepo full‑stack — React (Vite) + Node/Express (TypeScript) + Blockchain</p>
-        </a>
-        <a class="project-card" href="/projects/MemoireL3.html">
-          <h3>MemoireL3</h3>
-          <p>Application Laravel / PHP avec visualisations (D3, Chartist) — dashboard & gestion.</p>
-        </a>
-        <a class="project-card" href="/projects/stage.html">
-          <h3>stage</h3>
-          <p>Gestion des stages — Laravel + Vite + Tailwind, conteneurisé (Docker).</p>
-        </a>
-        <a class="project-card" href="/projects/Portfolio.html">
-          <h3>Portfolio</h3>
-          <p>Présentation personnelle — stack et expériences (ERP, cybersécurité, blockchain).</p>
-        </a>
-        <a class="project-card" href="/projects/secu2.html">
-          <h3>secu2 (shop)</h3>
-          <p>Application front bootstrappée Create React App — e‑commerce / démo.</p>
-        </a>
-        <a class="project-card" href="/projects/testG3.html">
-          <h3>testG3</h3>
-          <p>Petit dépôt de tests Java.</p>
-        </a>
-
-        <!-- Enerbird project card -->
         <a class="project-card" href="/projects/enerbird.html">
           <h3>Enerbird — SLD / Supervision</h3>
           <p>Vue supervision SLD, dashboards ESS — captures et notes techniques.</p>
-          <div class="project-hero"><img src="/images/enerbd1.png" alt="Enerbird screenshot" style="max-width:100%;border-radius:8px;margin-top:10px"></div>
+          <div class="project-hero"><img src="/images/enerbd1.png" alt="Capture d'écran Enerbird" loading="lazy"></div>
         </a>
 
-        <!-- private project cards (from CV) -->
         <a class="project-card" href="/projects/erp_jambaar.html">
           <h3>ERP Jambaar <span class="priv">(privé)</span></h3>
-          <p>ERP développé avec Flutter (mobile), Node.js et PostgreSQL — gestion commerciale et modules métiers.</p>
-          <div class="project-hero"><img src="/images/jambaar.jpeg" alt="Jambaar app screenshot"></div>
+          <p>ERP Flutter + Node.js + PostgreSQL — gestion commerciale et modules métiers.</p>
+          <div class="project-hero"><img src="/images/jambaar.jpeg" alt="Capture d'écran ERP Jambaar" loading="lazy"></div>
+        </a>
+
+        <a class="project-card" href="/projects/memoireMaster.html">
+          <h3>Mémoire Master — Ancrage blockchain</h3>
+          <p>Monorepo full‑stack — React (Vite) + Node/Express (TypeScript) + Solidity/Hardhat.</p>
         </a>
 
         <a class="project-card" href="/projects/cyber_rgpd.html">
           <h3>Plateforme cybersécurité RGPD <span class="priv">(privé)</span></h3>
-          <p>Solution de conformité RGPD — backend Flask, frontend React, déploiement Docker/Kubernetes.</p>
+          <p>Solution de conformité RGPD — Flask, React, Docker/Kubernetes.</p>
         </a>
 
+        <a class="project-card" href="/projects/inscriptions_univ.html">
+          <h3>Inscriptions universitaires <span class="priv">(privé)</span></h3>
+          <p>Ancrage blockchain des dossiers d'inscription — traçabilité et intégrité.</p>
+        </a>
+
+        <a class="project-card" href="/projects/MemoireL3.html">
+          <h3>Mémoire L3 — Dashboard Laravel</h3>
+          <p>Application Laravel / PHP avec visualisations (D3, Chartist).</p>
+        </a>
+
+        <a class="project-card" href="/projects/stage.html">
+          <h3>Gestion des stages</h3>
+          <p>Laravel + Vite + Tailwind, conteneurisé (Docker).</p>
+        </a>
+
+        <a class="project-card" href="/projects/Portfolio.html">
+          <h3>Portfolio</h3>
+          <p>Site personnel — présentation de la stack et des expériences.</p>
+        </a>
       </div>
     </section>
 
     <section class="card">
-      <h2>📊 Statistiques & Réalisations</h2>
+      <h2>En bref</h2>
       <div class="grid-3">
         <div>
-          <h3 style="margin-top:0">10+</h3>
-          <p>Projets complétés<br><small>Web, mobile, backend, blockchain</small></p>
+          <h3 class="stat-number">8+</h3>
+          <p>Projets présentés<br><small>Web, mobile, backend, blockchain</small></p>
         </div>
         <div>
-          <h3 style="margin-top:0">5+</h3>
-          <p>Années d'expérience<br><small>Master 1, alternances, stages</small></p>
+          <h3 class="stat-number">2</h3>
+          <p>Expériences pro<br><small>Naldeo &amp; Onyx</small></p>
         </div>
         <div>
-          <h3 style="margin-top:0">15+</h3>
-          <p>Technologies maîtrisées<br><small>React, Node, Flutter, Django, Docker...</small></p>
-        </div>
-      </div>
-      <div style="margin-top:20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px;">
-        <div style="background:rgba(217,115,59,0.1); border:1px solid rgba(217,115,59,0.3); padding:14px; border-radius:8px;">
-          <p style="margin:0; font-weight:700; color:var(--cta); font-size:18px;">99.8%</p>
-          <p style="margin:6px 0 0 0; font-size:13px; color:var(--muted);">Uptime production</p>
-        </div>
-        <div style="background:rgba(11,57,64,0.1); border:1px solid rgba(11,57,64,0.3); padding:14px; border-radius:8px;">
-          <p style="margin:0; font-weight:700; color:var(--cta); font-size:18px;">500K+</p>
-          <p style="margin:6px 0 0 0; font-size:13px; color:var(--muted);">Utilisateurs actifs</p>
-        </div>
-        <div style="background:rgba(217,115,59,0.1); border:1px solid rgba(217,115,59,0.3); padding:14px; border-radius:8px;">
-          <p style="margin:0; font-weight:700; color:var(--cta); font-size:18px;">< 2s</p>
-          <p style="margin:6px 0 0 0; font-size:13px; color:var(--muted);">Temps de réponse API</p>
+          <h3 class="stat-number">15+</h3>
+          <p>Technologies utilisées<br><small>React, Node, Flutter, Django, Docker…</small></p>
         </div>
       </div>
     </section>
 
     <section class="card">
-      <h2>🎯 Points forts</h2>
+      <h2>Points forts</h2>
       <div class="grid-3">
         <div>
-          <h3 style="margin-top:0">🎨 Design</h3>
-          <p>Interfaces modernes, responsive, accessibles. Expertise en UX/UI avec Figma et Tailwind.</p>
+          <h3>Design</h3>
+          <p>Interfaces modernes, responsive. UX/UI avec Figma et Tailwind.</p>
         </div>
         <div>
-          <h3 style="margin-top:0">⚙️ Optimisation</h3>
-          <p>Performance, scalabilité, clean code. Réduction temps chargement de 60%+.</p>
+          <h3>Optimisation</h3>
+          <p>Performance, scalabilité, clean code. Attention aux temps de réponse API.</p>
         </div>
         <div>
-          <h3 style="margin-top:0">🔐 Sécurité</h3>
-          <p>Authentification JWT, chiffrement, RGPD. Audits de sécurité et compliance.</p>
+          <h3>Sécurité</h3>
+          <p>Authentification JWT, bonnes pratiques RGPD, déploiement conteneurisé.</p>
         </div>
       </div>
     </section>
 
     <section id="gallery" class="card">
-      <h2>🖼️ Galerie — Projets en Production</h2>
+      <h2>Galerie</h2>
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="/images/sld.png" alt="SLD view" style="height:200px; object-fit:cover;">
-          <p><strong>Vue SLD</strong><br><small>Système supervision temps réel</small></p>
+          <img src="/images/sld.png" alt="Vue SLD Enerbird" style="height:200px; object-fit:cover;" loading="lazy">
+          <p><strong>Vue SLD</strong><br><small>Supervision temps réel</small></p>
         </div>
         <div class="gallery-item">
-          <img src="/images/enerbd1.png" alt="Dashboard Enerbird" style="height:200px; object-fit:cover;">
+          <img src="/images/enerbd1.png" alt="Dashboard Enerbird" style="height:200px; object-fit:cover;" loading="lazy">
           <p><strong>Dashboard Enerbird</strong><br><small>Gestion énergétique</small></p>
         </div>
         <div class="gallery-item">
-          <img src="/images/jambaar.jpeg" alt="ERP Jambaar" style="height:200px; object-fit:cover;">
+          <img src="/images/jambaar.jpeg" alt="ERP Jambaar" style="height:200px; object-fit:cover;" loading="lazy">
           <p><strong>ERP Jambaar</strong><br><small>Gestion commerciale</small></p>
         </div>
       </div>
     </section>
 
-    <section id="cv" class="card">
-      <h2>CV</h2>
-      <p>Vous pouvez télécharger le CV PDF ou le visualiser directement ci‑dessous.</p>
-      <p><a class="btn" href="/cv_alternance_khady.pdf" download>Télécharger le CV (PDF)</a></p>
-      <div style="margin-top:16px;">
-        <iframe src="/cv_alternance_khady.pdf" width="100%" height="640" title="CV PDF"></iframe>
-      </div>
-    </section>
-
     <section id="contact" class="card">
-      <h2>📧 Contact & Réseaux</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-top:16px;">
-        <a href="mailto:khadydiopfr02@gmail.com" class="btn" style="text-align:center; justify-content:center">✉️ Email</a>
-        <a href="https://github.com/arame7" target="_blank" class="btn" style="background:var(--accent-deep); text-align:center; justify-content:center">🐙 GitHub</a>
-        <a href="https://www.linkedin.com/in/khady-diop-dev" target="_blank" class="btn" style="background:var(--accent-deep); text-align:center; justify-content:center">💼 LinkedIn</a>
-        <a href="tel:+33XXXXXXXXX" class="btn" style="text-align:center; justify-content:center">📞 Téléphone</a>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <a href="mailto:khadydiopfr02@gmail.com" class="btn contact-btn">Email</a>
+        <a href="https://github.com/arame7" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/khady-diop-dev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-btn">LinkedIn</a>
+        <a href="mailto:khadydiopfr02@gmail.com?subject=Demande%20de%20CV%20—%20Alternance" class="btn btn-secondary contact-btn">Demander le CV</a>
       </div>
-      <div style="margin-top:20px; padding:14px; background:rgba(243,198,35,0.05); border-left:3px solid var(--cta); border-radius:6px;">
-        <p style="margin:0;"><strong>Disponibilité :</strong> Alternance à partir de septembre 2026 — 12 à 24 mois</p>
-        <p style="margin:8px 0 0 0; font-size:14px; color:var(--muted);">Région Nouvelle-Aquitaine ou télétravail / mobilité France</p>
+      <div class="availability-box">
+        <p><strong>Disponibilité :</strong> Alternance à partir de septembre 2026 — 12 à 24 mois</p>
+        <p class="availability-note">Région Nouvelle-Aquitaine ou télétravail / mobilité France</p>
       </div>
     </section>
   </main>
