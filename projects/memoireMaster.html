@@ -15,6 +15,24 @@
       
       <h3>🏗️ Architecture Monorepo</h3>
       <p>Le projet est structuré en 3 couches principales + infrastructure partagée :</p>
+      
+      <div style="background:rgba(217,115,59,0.05); padding:16px; border-radius:8px; border:1px solid rgba(217,115,59,0.2); margin-bottom:16px; overflow-x:auto;">
+        <pre style="margin:0; font-size:12px;">┌─────────────────────────────────────────────────────────────┐
+│                    FRONTEND (React/Vite)                     │
+│  SuperAdmin  │  Admin Univ  │  Étudiants  │  Enseignants    │
+└──────────────────────┬──────────────────────────────────────┘
+                       │  REST API
+┌──────────────────────┴──────────────────────────────────────┐
+│           BACKEND (Node.js/Express + TypeScript)            │
+│     PostgreSQL        │        MongoDB        │  JWT Auth    │
+└──────────────────────┬──────────────────────────────────────┘
+                       │  JSON RPC
+┌──────────────────────┴──────────────────────────────────────┐
+│         BLOCKCHAIN (Solidity/Hardhat/Ethereum)              │
+│  Document Hash  │  Diplômes  │  Certifications Anchoring   │
+└─────────────────────────────────────────────────────────────┘</pre>
+      </div>
+      
       <ul>
         <li><strong>Frontend</strong> (`/frontend`) — React.js (Vite) + TypeScript + Tailwind CSS
           <ul><li>Interfaces multi-rôles : SuperAdmin, Admin Université, Étudiants, Enseignants</li>
@@ -77,7 +95,27 @@
         <li>Traçabilité réglementaire et conformité CNIL</li>
       </ul>
 
-      <h3>🔗 Ressources</h3>
+      <h3>� Exigences & Installation</h3>
+      <p><strong>Prérequis :</strong></p>
+      <ul>
+        <li>Node.js 16+ et npm/yarn</li>
+        <li>Docker & Docker Compose</li>
+        <li>PostgreSQL 12+</li>
+        <li>MongoDB 4.4+</li>
+      </ul>
+      
+      <p><strong>Installation rapide :</strong></p>
+      <pre>git clone https://github.com/arame7/memoireMaster.git
+cd memoireMaster
+
+# Démarrer tous les services avec Docker Compose
+docker-compose up -d
+
+# Ou en développement local
+npm install
+npm run dev</pre>
+
+      <h3>�🔗 Ressources</h3>
       <p>
         <a href="https://github.com/arame7/memoireMaster" target="_blank" class="btn">Voir le code</a>
         <a href="https://github.com/arame7/memoireMaster#readme" target="_blank" class="btn" style="background:var(--accent-deep)">Documentation complète</a>

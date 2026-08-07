@@ -69,6 +69,14 @@ pre{background:rgba(0,0,0,0.2);padding:12px;border-radius:8px;overflow-x:auto;bo
 h3{margin-top:20px;margin-bottom:10px;font-size:18px;color:var(--cta);display:flex;align-items:center;gap:8px}
 ul{margin:10px 0;padding-left:24px}
 ul li{margin:6px 0}
+pre{background:rgba(0,0,0,0.2);padding:12px;border-radius:8px;overflow-x:auto;border-left:3px solid var(--accent);font-size:13px;line-height:1.4}
+h3{margin-top:20px;margin-bottom:10px;font-size:18px;color:var(--cta);display:flex;align-items:center;gap:8px}
+ul{margin:10px 0;padding-left:24px}
+ul li{margin:6px 0}
+/* Project images */
+.project-hero{display:flex;align-items:center;justify-content:center;margin:20px 0;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,rgba(217,115,59,0.05),rgba(11,57,64,0.05));}
+.project-hero img{max-width:100%;height:auto;display:block;box-shadow:0 8px 20px rgba(0,0,0,0.4);transition:transform .3s ease}
+.project-hero:hover img{transform:scale(1.02)}
 /* Responsive improvements */
 @media (max-width:900px){
   .grid-3{grid-template-columns:1fr}

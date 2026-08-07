@@ -42,8 +42,36 @@
         <span class="tech-badge">PHPUnit</span>
       </div>
 
-      <h3>🚀 Déploiement</h3>
-      <p>Conteneurisé avec Docker Compose. Idéal pour dev local et déploiement en production (VPS, K8s).</p>
+      <h3>� Flux de Gestion des Stages</h3>
+      <div style="background:rgba(217,115,59,0.05); padding:16px; border-radius:8px; border:1px solid rgba(217,115,59,0.2); margin-bottom:16px; overflow-x:auto;">
+        <pre style="margin:0; font-size:12px;">Étudiant → Recherche offre → Candidature → Entretien
+         ↓
+      Entreprise ← Reçoit candidature ← Valide candidature
+         ↓
+    Placement en stage
+         ↓
+  Suivi d'activités & tâches
+         ↓
+  Évaluation & Rapport final
+         ↓
+    Attestation générée</pre>
+      </div>
+
+      <h3>📋 Exigences & Installation</h3>
+      <p><strong>Prérequis :</strong></p>
+      <ul>
+        <li>Docker & Docker Compose</li>
+        <li>Node.js 16+ (frontend)</li>
+        <li>PHP 8+ (backend)</li>
+        <li>PostgreSQL 12+</li>
+      </ul>
+      
+      <p><strong>Démarrage rapide :</strong></p>
+      <pre>git clone https://github.com/arame7/stage.git
+cd stage
+
+docker-compose up -d
+# Accédez à http://localhost:8000</pre>
 
       <h3>🔗 Ressources</h3>
       <p>

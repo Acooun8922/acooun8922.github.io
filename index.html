@@ -18,7 +18,6 @@
   <meta name="twitter:description" content="Portfolio professionnel. Alternance développeuse full-stack en React, Node.js, Flutter, Django.">
   <meta name="twitter:image" content="https://arame7.github.io/assets/img/profile.jpg">
   <link rel="canonical" href="https://arame7.github.io">
-  <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">
     {
@@ -43,7 +42,7 @@
     <div class="container header-inner">
       <div class="brand">
         <div class="avatar-wrap">
-          <img id="avatar" src="/assets/img/profile.jpg" alt="Photo de Khady Diop">
+          <img id="avatar" src="/images/profile.JPG" alt="Photo de Khady Diop">
         </div>
         <div class="brand-text">
           <h1>KHADY DIOP</h1>
@@ -73,7 +72,25 @@
 
     <section id="about" class="card">
       <h2>Profil</h2>
-      <p>Alternante développeuse Full‑Stack, j'ai réalisé une alternance de 12 à 24 mois et travaillé sur des projets web et applicatifs. Je suis à l'aise sur la création d'applications web modernes, l'intégration front‑end et le développement back‑end. J'aime automatiser et améliorer les process de développement (CI/CD, conteneurisation).</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:center;">
+        <div>
+          <p><strong>Développeuse Full-Stack passionnée par les solutions modernes et performantes.</strong></p>
+          <p>Étudiante en Master 1 SIGLIS avec expérience en développement web et mobile. Spécialisée en :</p>
+          <ul style="margin:10px 0; padding-left:24px;">
+            <li>Applications web scalables (React, Node.js, Laravel)</li>
+            <li>Développement mobile multi-plateforme (Flutter)</li>
+            <li>Infrastructure cloud & DevOps (Docker, K8s, CI/CD)</li>
+            <li>Technologies blockchain pour sécurité</li>
+          </ul>
+          <p>🎯 En recherche <strong>alternance 12-24 mois</strong> dès septembre 2026.</p>
+        </div>
+        <div style="background:linear-gradient(135deg,rgba(217,115,59,0.1),rgba(11,57,64,0.1)); padding:20px; border-radius:12px; border:1px solid rgba(217,115,59,0.2);">
+          <h3 style="margin-top:0; color:var(--cta);">📍 Localisation</h3>
+          <p><strong>Bayonne</strong> (Nouvelle-Aquitaine)</p>
+          <p>✈️ Télétravail / mobilité France</p>
+          <p><strong>Disponibilité :</strong> Sept 2026</p>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="card">
@@ -137,7 +154,7 @@
         <a class="project-card" href="/projects/erp_jambaar.html">
           <h3>ERP Jambaar <span class="priv">(privé)</span></h3>
           <p>ERP développé avec Flutter (mobile), Node.js et PostgreSQL — gestion commerciale et modules métiers.</p>
-          <div class="project-hero"><img src="/assets/img/jambaar.jpg" alt="Jambaar app screenshot"></div>
+          <div class="project-hero"><img src="/images/jambaar.jpeg" alt="Jambaar app screenshot"></div>
         </a>
 
         <a class="project-card" href="/projects/cyber_rgpd.html">
@@ -199,10 +216,20 @@
     </section>
 
     <section id="gallery" class="card">
-      <h2>Galerie (Enerbird / SLD)</h2>
+      <h2>🖼️ Galerie — Projets en Production</h2>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="/assets/img/sld1.jpg" alt="SLD view 1"><p>Vue SLD — supervision</p></div>
-        <div class="gallery-item"><img src="/assets/img/sld2.jpg" alt="SLD view 2"><p>Dashboard Enerbird</p></div>
+        <div class="gallery-item">
+          <img src="/images/sld.png" alt="SLD view" style="height:200px; object-fit:cover;">
+          <p><strong>Vue SLD</strong><br><small>Système supervision temps réel</small></p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/enerbd1.png" alt="Dashboard Enerbird" style="height:200px; object-fit:cover;">
+          <p><strong>Dashboard Enerbird</strong><br><small>Gestion énergétique</small></p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/jambaar.jpeg" alt="ERP Jambaar" style="height:200px; object-fit:cover;">
+          <p><strong>ERP Jambaar</strong><br><small>Gestion commerciale</small></p>
+        </div>
       </div>
     </section>
 
