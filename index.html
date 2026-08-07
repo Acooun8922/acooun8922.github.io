@@ -10,8 +10,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <h1>KHADY DIOP</h1>
-        <p class="subtitle">Alternance — Développeuse Full‑Stack</p>
+        <div class="avatar-wrap">
+          <img id="avatar" src="/assets/img/profile.jpg" alt="Photo de Khady Diop">
+        </div>
+        <div class="brand-text">
+          <h1>KHADY DIOP</h1>
+          <p class="subtitle">Alternance — Développeuse Full‑Stack</p>
+        </div>
       </div>
       <nav class="nav">
         <a href="#about">À propos</a>
@@ -34,20 +39,28 @@
       </div>
     </section>
 
+    <section id="about" class="card">
+      <h2>Profil</h2>
+      <p>Alternante développeuse Full‑Stack, j'ai réalisé une alternance de 12 à 24 mois et travaillé sur des projets web et applicatifs. Je suis à l'aise sur la création d'applications web modernes, l'intégration front‑end et le développement back‑end. J'aime automatiser et améliorer les process de développement (CI/CD, conteneurisation).</p>
+    </section>
+
     <section id="skills" class="card">
       <h2>Compétences</h2>
       <div class="grid-3">
         <div>
           <h3>Front‑end</h3>
           <p>React, TypeScript, Vite, Tailwind, Flutter, HTML, CSS, Create React App</p>
+          <div class="skill-bar"><div style="width:88%">React / TypeScript</div></div>
         </div>
         <div>
           <h3>Back‑end</h3>
           <p>Node.js, Express, PHP (Laravel), Python, APIs REST, JWT</p>
+          <div class="skill-bar"><div style="width:80%">Node.js / Laravel</div></div>
         </div>
         <div>
           <h3>Infra & Data</h3>
           <p>Docker, docker‑compose, PostgreSQL, MongoDB, Git, CI/CD</p>
+          <div class="skill-bar"><div style="width:78%">Docker / PostgreSQL</div></div>
         </div>
       </div>
       <p class="note">Ces compétences sont extraites automatiquement de vos dépôts publics et du CV fourni. Si une compétence est manquante ou incorrecte, indiquez la modification souhaitée.</p>
@@ -57,62 +70,52 @@
       <h2>Projets</h2>
       <p class="note">Pages détaillées par projet — cliquez sur une carte pour ouvrir la page du projet. Les projets marqués « privé » ont été décrits à partir du CV (contenu confidentiel non affiché publiquement).</p>
       <div class="projects-grid">
+        <!-- existing project cards -->
         <a class="project-card" href="/projects/memoireMaster.html">
           <h3>memoireMaster</h3>
           <p>Monorepo full‑stack — React (Vite) + Node/Express (TypeScript) + Blockchain</p>
         </a>
-
         <a class="project-card" href="/projects/MemoireL3.html">
           <h3>MemoireL3</h3>
           <p>Application Laravel / PHP avec visualisations (D3, Chartist) — dashboard & gestion.</p>
         </a>
-
         <a class="project-card" href="/projects/stage.html">
           <h3>stage</h3>
           <p>Gestion des stages — Laravel + Vite + Tailwind, conteneurisé (Docker).</p>
         </a>
-
         <a class="project-card" href="/projects/Portfolio.html">
           <h3>Portfolio</h3>
           <p>Présentation personnelle — stack et expériences (ERP, cybersécurité, blockchain).</p>
         </a>
-
         <a class="project-card" href="/projects/secu2.html">
           <h3>secu2 (shop)</h3>
           <p>Application front bootstrappée Create React App — e‑commerce / démo.</p>
         </a>
-
         <a class="project-card" href="/projects/testG3.html">
           <h3>testG3</h3>
           <p>Petit dépôt de tests Java.</p>
         </a>
 
-        <!-- Projets privés / issus du CV -->
+        <!-- private project cards (from CV) -->
         <a class="project-card" href="/projects/erp_jambaar.html">
-          <h3>ERP Jambaar <span style="opacity:0.7">(privé)</span></h3>
+          <h3>ERP Jambaar <span class="priv">(privé)</span></h3>
           <p>ERP développé avec Flutter (mobile), Node.js et PostgreSQL — gestion commerciale et modules métiers.</p>
+          <div class="project-hero"><img src="/assets/img/jambaar.jpg" alt="Jambaar app screenshot"></div>
         </a>
 
         <a class="project-card" href="/projects/cyber_rgpd.html">
-          <h3>Plateforme cybersécurité RGPD <span style="opacity:0.7">(privé)</span></h3>
+          <h3>Plateforme cybersécurité RGPD <span class="priv">(privé)</span></h3>
           <p>Solution de conformité RGPD — backend Flask, frontend React, déploiement Docker/Kubernetes.</p>
         </a>
 
-        <a class="project-card" href="/projects/inscriptions_univ.html">
-          <h3>Gestion inscriptions universitaires <span style="opacity:0.7">(privé)</span></h3>
-          <p>Architecture multi‑tenant, ancrage blockchain pour validation des dossiers, Node.js, React.</p>
-        </a>
+      </div>
+    </section>
 
-        <a class="project-card" href="/projects/onyx.html">
-          <h3>Onyx Technology (expérience) <span style="opacity:0.7">(privé)</span></h3>
-          <p>Développement ERP, APIs REST, PostgreSQL, optimisation front React.</p>
-        </a>
-
-        <a class="project-card" href="/projects/naldeo.html">
-          <h3>Naldeo Digital Climate (expérience) <span style="opacity:0.7">(privé)</span></h3>
-          <p>Fonctionnalités Enerbird — Django & React, optimisation de performances.</p>
-        </a>
-
+    <section id="gallery" class="card">
+      <h2>Galerie (Enerbird / SLD)</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="/assets/img/sld1.jpg" alt="SLD view 1"><p>Vue SLD — supervision</p></div>
+        <div class="gallery-item"><img src="/assets/img/sld2.jpg" alt="SLD view 2"><p>Dashboard Enerbird</p></div>
       </div>
     </section>
 
