@@ -10,11 +10,46 @@
   <header class="site-header"><div class="container header-inner"><a href="/">← Retour</a><h1>stage</h1></div></header>
   <main class="container">
     <section class="card">
-      <h2>Gestion des stages</h2>
-      <p>Technos détectées : Laravel, Vite, Tailwind, PHP, Docker, npm/yarn (package.json présent).</p>
-      <h3>Résumé</h3>
-      <p>Projet Laravel classique avec configuration, tests (`phpunit.xml`) et configuration front (`package.json`, `tailwind.config.js`, `vite.config.js`). Contient `docker-compose` pour faciliter le déploiement.</p>
-      <p>Repo : <a href="https://github.com/arame7/stage" target="_blank">github.com/arame7/stage</a></p>
+      <h2>Plateforme de Gestion des Stages</h2>
+      <p class="note">Application web complète pour coordonner les stages : offres, candidatures, suivi et évaluation.</p>
+      
+      <h3>🏗️ Architecture</h3>
+      <ul>
+        <li><strong>Backend</strong> : Laravel 9+ (PHP 8+) — API REST, validation, authentification JWT</li>
+        <li><strong>Frontend</strong> : React/Vue + Tailwind + Vite — interface moderne et responsive</li>
+        <li><strong>Infrastructure</strong> : Docker & Docker Compose — déploiement et dev en conteneur</li>
+        <li><strong>Base de données</strong> : PostgreSQL ou MySQL (configurable via .env)</li>
+      </ul>
+
+      <h3>✨ Fonctionnalités principales</h3>
+      <ul>
+        <li>Espace étudiants : recherche et candidature à des offres</li>
+        <li>Espace entreprises : publication d'offres, gestion des candidatures</li>
+        <li>Suivi de stage : activités, tâches, évaluations en temps réel</li>
+        <li>Génération de rapports et attestations PDF</li>
+        <li>Système de notifications (email, in-app)</li>
+      </ul>
+
+      <h3>💻 Stack technique</h3>
+      <div class="tech-stack">
+        <span class="tech-badge">Laravel</span>
+        <span class="tech-badge">PHP 8+</span>
+        <span class="tech-badge">React/Vue</span>
+        <span class="tech-badge">Tailwind CSS</span>
+        <span class="tech-badge">Vite</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">PHPUnit</span>
+      </div>
+
+      <h3>🚀 Déploiement</h3>
+      <p>Conteneurisé avec Docker Compose. Idéal pour dev local et déploiement en production (VPS, K8s).</p>
+
+      <h3>🔗 Ressources</h3>
+      <p>
+        <a href="https://github.com/arame7/stage" target="_blank" class="btn">Voir le code</a>
+        <a href="https://github.com/arame7/stage#readme" target="_blank" class="btn" style="background:var(--accent-deep)">Documentation</a>
+      </p>
     </section>
   </main>
 </body>

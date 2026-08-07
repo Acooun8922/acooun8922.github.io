@@ -10,18 +10,78 @@
   <header class="site-header"><div class="container header-inner"><a href="/">← Retour</a><h1>memoireMaster</h1></div></header>
   <main class="container">
     <section class="card">
-      <h2>Monorepo — Plateforme Multi‑tenant de Gestion Universitaire</h2>
-      <p>Technos détectées : React (Vite), TypeScript, Tailwind, Node.js, Express, PostgreSQL, MongoDB, Solidity (Hardhat), Docker & Docker Compose.</p>
-      <h3>Résumé</h3>
-      <p>Ce projet est structuré comme un monorepo contenant les 3 couches principales de l'application :</p>
+      <h2>Monorepo — Plateforme Multi-Tenant de Gestion Universitaire</h2>
+      <p class="note">Projet full-stack de master : plateforme complète avec smart contracts blockchain pour sécurité et traçabilité.</p>
+      
+      <h3>🏗️ Architecture Monorepo</h3>
+      <p>Le projet est structuré en 3 couches principales + infrastructure partagée :</p>
       <ul>
-        <li><strong>Frontend</strong> (`/frontend`) — React.js (Vite) + TypeScript, Tailwind CSS. Interface pour SuperAdmin, Admin Université, Etudiants.</li>
-        <li><strong>Backend</strong> (`/backend`) — Node.js + Express.js + TypeScript. PostgreSQL (données relationnelles) et MongoDB (documents, dossiers).</li>
-        <li><strong>Blockchain</strong> (`/blockchain`) — Smart Contracts Solidity (Ethereum/Polygon) pour ancrage de documents (hash).</li>
+        <li><strong>Frontend</strong> (`/frontend`) — React.js (Vite) + TypeScript + Tailwind CSS
+          <ul><li>Interfaces multi-rôles : SuperAdmin, Admin Université, Étudiants, Enseignants</li>
+          <li>Dashboards avec visualisations en temps réel</li>
+          <li>Authentification JWT, gestion des permissions</li></ul>
+        </li>
+        <li><strong>Backend</strong> (`/backend`) — Node.js + Express.js + TypeScript
+          <ul><li>PostgreSQL pour données relationnelles (utilisateurs, inscriptions, résultats)</li>
+          <li>MongoDB pour données non-structurées (documents, archives)</li>
+          <li>APIs REST, gestion d'authentification, validation des données</li></ul>
+        </li>
+        <li><strong>Blockchain</strong> (`/blockchain`) — Smart Contracts Solidity
+          <ul><li>Hardhat pour développement et testing</li>
+          <li>Déploiement Ethereum/Polygon</li>
+          <li>Ancrage immutable de hashes de documents</li></ul>
+        </li>
       </ul>
-      <h3>Infrastructure</h3>
-      <p>Conteneurisation avec Docker & Docker Compose. Fichiers utiles : `docker-compose.yml`, `package.json`.</p>
-      <p>Repo : <a href="https://github.com/arame7/memoireMaster" target="_blank">github.com/arame7/memoireMaster</a></p>
+
+      <h3>✨ Fonctionnalités principales</h3>
+      <ul>
+        <li><strong>Gestion multi-université</strong> : chaque université a son espace isolé (multi-tenant)</li>
+        <li><strong>Inscriptions & Résultats</strong> : parcours complet étudiant (inscription → validation → résultats)</li>
+        <li><strong>Blockchain</strong> : validation immutable des dossiers importants (diplômes, certifications)</li>
+        <li><strong>Authentification avancée</strong> : JWT, OAuth2 (intégration SSO université)</li>
+        <li><strong>Exports & Reports</strong> : génération PDF, statistiques académiques</li>
+        <li><strong>Notifications temps réel</strong> : email, SMS, notifications in-app</li>
+      </ul>
+
+      <h3>💻 Stack technique complet</h3>
+      <div class="tech-stack">
+        <span class="tech-badge">React 18+</span>
+        <span class="tech-badge">Vite</span>
+        <span class="tech-badge">TypeScript</span>
+        <span class="tech-badge">Tailwind CSS</span>
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">Express</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">MongoDB</span>
+        <span class="tech-badge">Solidity</span>
+        <span class="tech-badge">Hardhat</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">Docker Compose</span>
+        <span class="tech-badge">JWT</span>
+        <span class="tech-badge">WebSocket</span>
+      </div>
+
+      <h3>🚀 Déploiement & Infrastructure</h3>
+      <ul>
+        <li>Conteneurisation complète avec Docker & Docker Compose</li>
+        <li>Services orchestrés (frontend, backend, postgres, mongodb, blockchain)</li>
+        <li>Prêt pour déploiement K8s (inclut manifests)</li>
+        <li>CI/CD avec GitHub Actions</li>
+      </ul>
+
+      <h3>📊 Cas d'usage académique</h3>
+      <ul>
+        <li>Universités privées multi-campus</li>
+        <li>Cursus mixte (présentiel + distanciel)</li>
+        <li>Intégration avec LMS (Moodle, Canvas)</li>
+        <li>Traçabilité réglementaire et conformité CNIL</li>
+      </ul>
+
+      <h3>🔗 Ressources</h3>
+      <p>
+        <a href="https://github.com/arame7/memoireMaster" target="_blank" class="btn">Voir le code</a>
+        <a href="https://github.com/arame7/memoireMaster#readme" target="_blank" class="btn" style="background:var(--accent-deep)">Documentation complète</a>
+      </p>
     </section>
   </main>
 </body>
